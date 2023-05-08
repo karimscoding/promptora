@@ -1,7 +1,20 @@
-import React from 'react'
+import Feed from "@components/Feed";
+import React from "react";
 
 export default function Home() {
   return (
-    <div>Hello Next js App</div>
-  )
+    <section className="w-full flex-center flex-col">
+      <h1 className="head_text text-center">
+        Discover & Share
+        <br className="max-md:overflow-y-hidden" />
+        <span className="orange_gradient text-center">AI- Powered Prompt</span>
+      </h1>
+      
+      <p className="desc text-center">
+        Promptora is an open source AI prompting tools for mordern world to
+        discover create and share creative prompts
+      </p>
+      <Feed />
+    </section>
+  );
 }
